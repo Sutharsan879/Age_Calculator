@@ -1,0 +1,113 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #333;
+    width: 100vw;
+}
+.container
+{
+    background-color: #777;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 50px 15px 50px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    width: 65vw;
+}
+.container .date-container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.container .date-container .date
+{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+.container .date-container .date input
+{
+    height: 6vh;
+    width: 15vw;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(92, 126, 128);
+}
+.container #calculatebtn
+{
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+#output
+{
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px seagreen;
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: aliceblue;
+}
+
+
+@media screen and (max-width:768px) {
+    .container
+    {
+        gap: 2rem;
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }  
+    .container .date-container
+    {
+        gap: 2rem;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+    }  
+    .container .date-container .date
+    {
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .date-container .date input
+    {
+        width: auto;
+    }
+    #output
+    {
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+        box-shadow: 2px 2px 5px seagreen;
+        border-radius: 10px;
+        font-weight: bolder;
+        background-color: aliceblue;
+    }
+}
